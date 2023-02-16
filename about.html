@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About us from Rainydays." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Rainydays | About us</title>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <a href="index.html">Rainydays</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" alt="Rainydays logo">
+                </a>
+        </div>
         <nav>
             <ul>
                 <li><a href="list of all jackets.html">All jacket news</a></li>
@@ -20,7 +28,7 @@
                 <li><a href="#">Camping</a></li>
                 <li><a href="#">Canoeing</a></li>
                 <li><a href="#">Skiing</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="about.html" class="active">About us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Sale</a></li>
@@ -30,7 +38,7 @@
     <main>
         <h1>About us</h1>
         <section>
-            <div>
+            <div class="image-about">
                 <img src="images/home-header.jpg" alt="A lady in a yellow jacket, looking out over a green water with mountains in the background surrounded by 
                 a beautiful landscape with green trees around the water." /> 
             </div>
@@ -38,29 +46,32 @@
         <section>
             <div>
                 <p>We are an online store selling top-quality rain jackets at a good price. We are passionate about having top-quality clothing when you go 
-                    out to do different outdoor activities.</p>
+                   out to do different outdoor activities.</p>
                 <p>Our goal is to be the preferred online store in the market that sells rain jackets of good quality. Our motto is pushing the comfort zone.</p>
                 <p>Our customers are everything, we are passionate about you getting top customer service and fast delivery every time you shop with us.</p>
             </div>
         </section>
         <section>
-            <div>
+            <div class="image-info">
                 <img src="images/exploring-home.jpg" alt="A man takes a picture with his phone of the beautiful mountain."/>
             </div>
-            <div>
+            <div class="image-info">
                 <img src="images/hiking-home.jpg" alt="Two people with their backs turned, exploring the beautiful mountain with forest around."/>
             </div>
         </section>
         <section>
             <div>
-                <a href="index.html">Back to the home page</a>
+                <a href="index.html" class="cta-large">Home</a>
             </div>
         </section>
     </main>
     <footer>
-      <section>
-        <a href="index.html">Rainydays</a>
-         <div>
+        <section>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" />
+            </div>
+        <div>
             <h4>Help</h4>
             <ul>
                 <li>Customer service</li>
@@ -72,7 +83,7 @@
          <div>
             <h4>Contact us</h4>
             <ul>
-                <li>About us</li> 
+                <li>About us</li>
                 <li>Contact us</li>
                 <li>Work with us</li>
             </ul>
@@ -80,8 +91,7 @@
          <div>
             <h4>Follow us</h4>
          </div>
-      </section>
-
+        </section>
     </footer>
 </body>
 </html>

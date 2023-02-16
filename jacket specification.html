@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jacket specification available from Rainydays." /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
 <body>
     <header>
-        <a href="index.html">Rainydays</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" alt="Rainydays logo">
+                </a>
+        </div>
         <nav>
             <ul>
-                <li><a href="list of all jackets.html">All jacket news</a></li>
+                <li><a href="list of all jackets.html" class="active">All jacket news</a></li>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Men</a></li>
                 <li><a href="#">Exploring</a></li>
@@ -24,18 +32,35 @@
                 <li><a href="#">Sale</a></li>
             </ul>
         </nav>
-        <h1>Back/Women Jacket</h1>
+        
+    </header>
+    <main>
+        <a href="list of all jackets.html" class="back"> Back/Women Jacket</a>
+        <h1>Jacket</h1>
         <section>
-            <div>
-                <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women">
+            <div class="image-specification">
+                <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women" />
             </div>
         </section>
         <section>
             <div>
                 <h2>Women's Waterproof Jacket</h2>
-                <p>$1299</p>
-                <input>
-                <p>Available colors</p>
+                <p class="product__price">$129</p>
+                <p><strong>Available size</strong></p>
+            <form>
+             <select id="size" name="size">
+                <option value="Size small">Size small</option>
+                <option value="Size medium">Size medium</option>
+                <option value="Size Large">Size large</option>
+             </select>
+            </form>
+                <p><strong>Available colors</strong><p>
+                <form>
+                    <select id="color" name="Color">
+                       <option value="Color black">Color black</option>
+                       <option value="Color grey">Color grey</option>
+                       <option value="Color yellow">Color yellow</option>
+                    </select>
                 <h3>Description</h3>
                 <p>With this jacket, you will stay dry and warm when you are going out on shorter trips or for everyday use. It takes up
                    little space in the bag, which is perfect if you are going out on longer trips. Read more.
@@ -62,78 +87,79 @@
         </section>
         <section>
             <div>
-                <a href="checkout page.html">Add to bag</a>
+                <a href="checkout page.html" class="cta-large"> Add to bag</a>
             </div>
         </section>
-    </header>
-    <main>
         <h5>Recommended to you</h5>
-        <section>
-            <div>
-                <img src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men" />
+        <section class="products">
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men"></a>
                 <h2>Men's Fleece Jacket</h2>
-                <p>$899</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$89</p>
             </div>
-            <div>
-                <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women"></a>
                 <h2>Women's Waterproof Jacket</h2>
-                <p>$1299</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$129</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1399</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$139</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1399</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$139</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Grey.png" alt="Grey waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Grey.png" alt="Grey waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1199</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$119</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men"></a>
                 <h2>Men's Fleece Jacket</h2>
-                <p>$899</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$89</p>
             </div>
-            <div>
-                <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women"></a>
                 <h2>Women's Waterproof Jacket</h2>
-                <p>$1299</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$129</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1399</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$139</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1399</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$139</p>
             </div>
-            <div>
-                <img src="images/Jacket_Men_Grey.png" alt="Grey waterproof jacket men" />
+            <div class="product-card">
+                <a href="jacket specification.html">
+                <img class="product__image" src="images/Jacket_Men_Grey.png" alt="Grey waterproof jacket men"></a>
                 <h2>Men's Waterproof Jacket</h2>
-                <p>$1199</p>
-                <a href="jacket specification.html">View</a>
+                <p class="product__price">$119</p>
             </div>
         </section>
     </main>
     <footer>
-      <section>
-        <a href="index.html">Rainydays</a>
+        <section>
+         <div class="logo">
+            <a href="index.html">
+            <img src="/images/RainyDays_Logo.png" />
+         </div>
          <div>
             <h4>Help</h4>
             <ul>
@@ -154,8 +180,7 @@
          <div>
             <h4>Follow us</h4>
          </div>
-      </section>
-
+        </section>
     </footer>
 </body>
 </html>

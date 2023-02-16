@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get top-quality rain jackets at a good price from Rainydays." />
-    <title>Rainydays | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+    <title> Rainydays | Home </title>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <a href="index.html">Rainydays</a>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
+        <div class="header-container">
+            
+            <a class="logo" href="index.html">
+            <img class="logo-image" src="/images/RainyDays_Logo.png"></a>
+            <input type="text" placeholder="Search here..." class="search">
+        
         <nav>
             <ul>
                 <li><a href="list of all jackets.html">All jacket news</a></li>
@@ -22,64 +37,77 @@
                 <li><a href="#">Skiing</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="#">Sale</a></li>
             </ul>
         </nav>
-        <section>
-         <h1>This week -30% On all autumn news</h1>  
-         <a href="list of all jackets.html">Shop now!</a>
-         <p>*Valid until 16.11.22.</p>
-         <div>
-         <a href="list of all jackets.html"> Get inspired here!</a>
-         </div>
-        </section>
+    </div>
     </header>
     <main>
-      <section>
-        <h2>All news</h2>
-         <div>
-            <img src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men"/>
-            <h3>Men's Fleece Jacket</h3>
-            <p>$899</p>
-            <a href="list of all jackets.html">View</a>
+        <section class="banner-container">
+            <img class="banner__image" src="images/home-header.jpg" alt="A lady in a yellow jacket, looking out over a green water with mountains in the background surrounded by 
+             a beautiful landscape with green trees around the water." /> 
+            <div class="banner-content">
+             <h1>This week <span>-30%</span> On all autumn news</h1>
+             <a href="list of all jackets.html" class="cta__banner">Shop now!</a>
+            </div>
+        </section>
+            <div>
+              <p>*Valid until 16.11.22.</p>
+            </div>
+           <a href="list of all jackets.html" class="all-news">All news</a> 
+        <section class="products-container">
+         <div class="product-card">
+            <a href="jacket specification.html">
+            <img class="product__image" src="images/Jacket_Men_Fleece_Green.png" alt="Green fleece jacket men"></a>
+             <h2>Men's Fleece Jacket</h2>
+             <p class="product__price">$89</p>
          </div>
-         <div>
-            <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women"/>
-            <h3>Women's Waterproof Jacket</h3>
-            <p>$1299</p>
-            <a href="list of all jackets.html">View</a>
+         <div class="product-card">
+            <a href="jacket specification.html">
+            <img class="product__image" src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women"></a>
+            <h2>Women's Waterproof Jacket</h2>
+            <p class="product__price">$129</p>
          </div>
-         <div>
-            <img src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men"/>
-            <h3>Men's Waterproof Jacket</h3>
-            <p>$1399</p>
-            <a href="list of all jackets.html">View</a>
+         <div class="product-card">
+            <a href="jacket specification.html">
+            <img class="product__image" src="images/Jacket_Men_Black_Yellow.png" alt="Black and yellow waterproof jacket men"></a>
+            <h2>Men's Waterproof Jacket</h2>
+            <p class="product__price">$139</p>
          </div>
-         <div>
-            <img src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men"/>
-            <h3>Men's Waterproof Jacket</h3>
-            <p>$1399</p>
-            <a href="list of all jackets.html">View</a>
+         <div class="product-card">
+            <a href="jacket specification.html">
+            <img class="product__image" src="images/Jacket_Men_Black_white.png" alt="Black and white waterproof jacket men"></a>
+            <h2>Men's Waterproof Jacket</h2>
+            <p class="product__price">$139</p>
          </div>
-         <div>
-            <img src="images/Jacket_Men_Grey.png" alt="Grey Waterproof Jacket men"/>
-            <h3>Men's Waterproof Jacket</h3>
-            <p>$1199</p>
-            <a href="list of all jackets.html">View</a>
+         <div class="product-card">
+            <a href="jacket specification.html">
+            <img class="product__image" src="images/Jacket_Men_Grey.png" alt="Grey Waterproof Jacket men"></a>
+            <h2>Men's Waterproof Jacket</h2>
+            <p class="product__price">$119</p>
          </div>
       </section>
-      <section>
-        <img src="/images/exploring-home.jpg" alt="A man takes a picture with his phone of the beautiful mountain."/>
-        <img src="/images/hiking-home.jpg" alt="Two people with their backs turned, exploring the beautiful mountain with forest around."/>
-        <img src="/images/camping-home.jpg" alt="camping in the mountains with a beautiful sunset behind the mountains"/>
+      <section class="categories">
+        <div class="categorie-exploring">
+        <a href="index.html" class="cta__categorie">Exploring</a>
+       </div>
+       <div class="categorie-hiking">
+        <a href="index.html" class="cta__categorie">Hiking</a>
+       </div>
+       <div class="categorie-camping">
+        <a href="index.html" class="cta__categorie">Camping</a>
+       </div>
       </section>
     </main>
     <footer>
-      <section>
-        <a href="#">Rainydays</a>
-         <div>
-            <h4>Help</h4>
+        <section>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" />
+            </div>
+        <div>
+            <h3>Help</h3>
             <ul>
                 <li>Customer service</li>
                 <li>Return</li>
@@ -88,7 +116,7 @@
             </ul>
          </div>
          <div>
-            <h4>Contact us</h4>
+            <h3>Contact us</h3>
             <ul>
                 <li>About us</li>
                 <li>Contact us</li>
@@ -96,10 +124,9 @@
             </ul>
          </div>
          <div>
-            <h4>Follow us</h4>
+            <h3>Follow us</h3>
          </div>
-      </section>
-
+        </section>
     </footer>
 </body>
 </html>

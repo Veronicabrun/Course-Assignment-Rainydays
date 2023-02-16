@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Checkout page for your jacket from Rainydays." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Rainydays | Checkout page</title>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <a href="index.html">Rainydays</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" alt="Rainydays logo">
+                </a>
+        </div>
         <nav>
             <ul>
-                <li><a href="list of all jackets.html">All jacket news</a></li>
+                <li><a href="list of all jackets.html" class="active">All jacket news</a></li>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Men</a></li>
                 <li><a href="#">Exploring</a></li>
@@ -30,42 +38,64 @@
     </header>
     <main>
      <section>
-        <div>
+        <div class="image-checkout">
             <img src="images/Jacket_Women_Black.png" alt="Black waterproof jacket women" />
             <p>Women's Waterproof Jacket</p>
             <p>Size:M</p>
-            <p>Sum total: 1299,-</p>
+            <p class="product__price">Sum total: 1299,-</p>
         </div>
      </section>
      <section>
         <div>
             <h2>1.Shipping</h2>
-            <input>
-            <input>
-            <input>
-            <input>
-            <input>
-            <input>
+            <form method="post">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="Email"/>
+                <label for="name">First name*</label>
+                <input type="name" id="name" name="Name"/>
+                <label for="name">Last name*</label>
+                <input type="name" id="name" name="Name"/>
+                <label for="address">Address*</label>
+                <input type="address" id="address" name="Address"/>
+                <label for="city">City*</label>
+                <input type="city" id="city" name="City"/>
+                <label for="number">Phone number*</label>
+                <input type="number" id="number" name="Phone number"/>  
+            </form>
         </div>
      </section>
      <section>
         <div>
             <h3>2.Payment</h3>
-            <input>
-            <input>
-            <input>
-            <input>
+            <form method="post">
+                <label for="card number">Card number*</label>
+                <input type="card number" id="card number" name="Card number"/>
+                <label for="personal number">Personal number(MM/YY*)</label>
+                <input type="personal number" id="personal number" name="Personal number"/>
+                <label for="security code">Security code(CVC*)</label>
+                <input type="security code" id="security code" name="Security code"/>
+                <label for="cardholder name">Cardholder name*</label>
+                <input type="cardholder name" id="cardholder name" name="Cardholder name"/>
+                <select id="select payment" name="Select payment">
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Paypal">PayPal</option>
+                </select>
+             </form>
         </div>
      </section>
      <section>
         <div>
-            <a href="Payment successful.html">Confirm payment</a>
+            <a href="Payment successful.html" class="cta-large">Confirm payment</a>
         </div>
      </section>
     </main>
     <footer>
       <section>
-        <a href="index.html">Rainydays</a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/RainyDays_Logo.png" />
+            </div>
          <div>
             <h4>Help</h4>
             <ul>

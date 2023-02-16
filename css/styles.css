@@ -1,0 +1,283 @@
+@font-face {
+  
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+}
+
+header, 
+footer {
+    background-color: rgba(112, 112, 112,.2);
+    color: #0A3641
+}
+
+/* Home header */
+header {
+    position: relative;
+    text-align: center; 
+    width: 100%;
+    height: 20%; 
+}
+
+.logo {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    float: left;
+    width: 10%;
+}
+
+.search {
+    background-color: #fff;
+    align-items: center;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px; 
+}
+
+nav a {
+    color: #0A3641;
+    text-decoration: none;
+    font-weight: 1.5em;
+    font-size: 16px;
+    padding: 1.5px; 
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+nav ul {
+    padding: 0px;  
+}
+
+.active {
+text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Home header main */
+main {
+    background-color: #f3f4f4;
+    color: #0A3641;
+}
+
+.banner-container {
+    max-width: 100%;
+    border: 1px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner__image {
+    max-width: 800px;
+    height: 300px;    
+}
+
+.cta__banner {
+    background-color: #0A3641;
+    color: #BF8C60;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    font-size: 24px;
+} 
+
+.banner-content {
+    max-width: 600px;
+    height: 300px;
+    background-color: #ffff; 
+    font-family: 'lato', 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+ font-size: 2em;
+text-align: center;
+
+}
+
+span {
+    font-size: 2em;
+    color: #BF8C60;
+}
+
+img {
+    max-width: 100%;
+}
+
+.all-news {
+ 
+    margin-left: 30px;
+    color:#0A3641;
+    text-decoration: none;
+    font-weight: bolder;  
+}
+
+.all-news:hover {
+    text-decoration: underline; 
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    background-color: rgba(112, 112, 112,.2);
+}
+
+.product__card {
+    width: 160px;
+    height: 180px; 
+}
+
+.product__image {
+    width: 160px;
+    height: 170px;
+    padding: 10px 10px;
+    background-color: #fff;
+}
+
+h2 {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.product__price {
+    display: block;
+    color: #BF8C60;
+    text-align: left;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.categorie-exploring {
+    background-image: url("../images/exploring-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position: center;
+    min-height: 50vh;
+    width: 25%;
+}
+
+.categorie-hiking {
+    background-image: url(../images/hiking-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position: center;
+    min-height: 50vh;
+    width: 25%;  
+}
+
+.categorie-camping {
+    background-image: url(../images/camping-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position: center;
+    min-height: 50vh;
+    width: 25%;
+}
+
+.cta__categorie {
+    background-color: #0A3641;
+    color: #BF8C60;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+}
+   
+
+/*Jacket specification site */
+.back {
+    color:#0A3641;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.image-specification {
+    max-width: 40%;
+}
+
+.cta-large {
+    background-color: #0A3641;
+    color: #BF8C60;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px; 
+}
+
+.products {
+
+}
+
+
+/* Contact page */
+input, select, textarea {
+    border: 1px solid #0A3641;
+}  
+    
+
+.image-contact {
+    max-width: 40%;
+}
+
+.cta_send {
+
+}
+
+/* About page */
+.image-about {
+    max-width: 40%;
+}
+
+.image-info {
+    max-width: 25%;
+}
+
+/* Checkout page */
+.image-checkout {
+    max-width: 15%;  
+}
+
+ 
+/* footer */
+footer {
+    display: flex;
+  }
+
+  ul {
+    list-style-type: none;
+    color:#0A3641;
+  }
