@@ -8,34 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
     <title>Rainydays | Checkout page</title>
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="/images/RainyDays_Logo.png" alt="Rainydays logo">
-                </a>
+        <div class="header-container">
+            <a class="logo-header" href="index.html">
+            <figure style="max-width: 100px;margin:0px;">
+              <img class="logo-image" src="/images/RainyDays_Logo.png">
+            </figure>
+            </a>
+            <input type="text" placeholder="Search here..." class="search">
+            <div class="header-icons">
+                <div>
+                  <a href="#"><i class="fa-regular fa-heart"></i> Favourites</a>
+                </div>
+                <div>
+                  <a href="#"><i class="fa-regular fa-user"></i> My pages</a>
+                </div>
+                <div>
+                  <a href="#"><i class="fa-regular fa-bag-shopping"></i> Shopping Cart</a>
+                </div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="list of all jackets.html" class="active">All jacket news</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Exploring</a></li>
-                <li><a href="#">Hiking</a></li>
-                <li><a href="#">Camping</a></li>
-                <li><a href="#">Canoeing</a></li>
-                <li><a href="#">Skiing</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Sale</a></li>
-            </ul>
-        </nav>
-        <h1>Back/Shopping cart</h1>
     </header>
+    <input type="checkbox" id="menu-checkbox" />
+    <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+    <nav>
+        <ul>
+            <li><a href="jackets.html" class="active">All jacket news</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Exploring</a></li>
+            <li><a href="#">Hiking</a></li>
+            <li><a href="#">Camping</a></li>
+            <li><a href="#">Canoeing</a></li>
+            <li><a href="#">Skiing</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+    </nav>
+        <h1>Back/Shopping cart</h1>
     <main>
      <section>
         <div class="image-checkout">
@@ -86,38 +103,30 @@
      </section>
      <section>
         <div>
-            <a href="Payment successful.html" class="cta-large">Confirm payment</a>
+            <a href="success.html" class="cta-large">Confirm payment</a>
         </div>
      </section>
     </main>
     <footer>
-      <section>
-        <div class="logo">
-            <a href="index.html">
-                <img src="/images/RainyDays_Logo.png" />
-            </div>
-         <div>
-            <h4>Help</h4>
+        <div class="footer-container">
+        <div class="help-container">
+          <h3>Help</h3>
             <ul>
-                <li>Customer service</li>
-                <li>Return</li>
-                <li>Shipping & delivery</li>
-                <li>Privacy policy</li>
+              <li>Customer service</li>
+              <li>Return</li>
+              <li>Shipping & delivery</li>
+              <li>Privacy policy</li>
             </ul>
-         </div>
-         <div>
-            <h4>Contact us</h4>
+        </div>
+        <div class="contact-container">
+          <h3>Contact us</h3>
             <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Work with us</li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li>Work with us</li>
             </ul>
-         </div>
-         <div>
-            <h4>Follow us</h4>
-         </div>
-      </section>
-
+        </div>
+        </div>
     </footer>
 </body>
 </html>
