@@ -36,6 +36,7 @@
     </header>
     <input type="checkbox" id="menu-checkbox" />
     <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+    <div class="nav-menu">
     <nav>
         <ul>
             <li><a href="jackets.html" class="active">All jacket news</a></li>
@@ -52,7 +53,7 @@
             <li><a href="#" class="sale">Sale</a></li>
         </ul>
     </nav>
-    
+    </div>
     <main>
        <a href="jackets.html" class="back-shopping-cart"> Back/Women Jacket</a> 
         <section class="checkout-container">
@@ -62,9 +63,7 @@
             <p class="checkout-product-text">Size: M</p>
             <p class="product__price">Sum total: 1299,-</p>
         </figure>
-         
-        
-        <div class="checkout-info-item">
+         <div class="checkout-info-item">
             <h1 class="shipping-text">1.Shipping</h1>
             <form method="post">
                 <label for="email">Email*</label>
@@ -80,8 +79,7 @@
                 <label for="number">Phone number*</label>
                 <input type="number" id="number" name="Phone number"/>  
             </form>
-            
-        <div class="checkout-info-item">
+            <div class="checkout-info-item">
             <h2 class="payment-text">2.Payment</h2>
             <form method="post">
                 <label for="card number">Card number*</label>
@@ -92,10 +90,12 @@
                 <input type="security code" id="security code" name="Security code"/>
                 <label for="cardholder name">Cardholder name*</label>
                 <input type="cardholder name" id="cardholder name" name="Cardholder name"/>
-                <select id="select payment" name="Select payment">
+                <div class="payment-option">
+                <select id="select-payment" name="Select payment">
                     <option value="Visa">Visa</option>
                     <option value="Mastercard">Mastercard</option>
                     <option value="Paypal">PayPal</option>
+                </div>
                 </select>
             </form>
             <div class="product-confirm">
