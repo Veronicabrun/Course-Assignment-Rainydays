@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-    <title>Rainydays | About us</title>
+    <title> Rainydays | About us</title>
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
@@ -29,7 +29,7 @@
                   <a href="#"><i class="fa-regular fa-user"></i> My pages</a>
                 </div>
                 <div>
-                  <a href="#"><i class="fa-regular fa-bag-shopping"></i> Shopping Cart</a>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</a>
                 </div>
             </div>
         </div>
@@ -49,35 +49,35 @@
             <li><a href="about.html" class="active">About us</a></li>
             <li><a href="contact.html">Contact us</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Sale</a></li>
+            <li><a href="#" class="sale">Sale</a></li>
         </ul>
     </nav>
     <main>
-        <h1>About us</h1>
-        <section class="about">
-            <div class="about-image">
-                <img src="images/home-header.jpg" alt="A lady in a yellow jacket, looking out over a green water with mountains in the background surrounded by 
-                a beautiful landscape with green trees around the water." /> 
-            </div>
-            <div class="about-info">
-                <p>We are an online store selling top-quality rain jackets at a good price. We are passionate about having top-quality clothing when you go 
+        <a href="index.html" class="back-home"> Back/Home</a>
+        <h1 class="about-us">About us</h1>
+        <section>
+            <div class="about-flexbox">
+              <figure>
+                <img class="about-image" src="images/home-header.jpg" alt="A lady in a yellow jacket, looking out over a green water with mountains in the background surrounded by 
+                a beautiful landscape with green trees around the water."> 
+              </figure>
+            <div>
+              <div class="about-text"><p>We are an online store selling top-quality rain jackets at a good price. We are passionate about having top-quality clothing when you go 
                  out to do different outdoor activities.</p>
                 <p>Our goal is to be the preferred online store in the market that sells rain jackets of good quality. Our motto is pushing the comfort zone.</p>
-                <p>Our customers are everything, we are passionate about you getting top customer service and fast delivery every time you shop with us.</p>
-            </div>
-        </section>
-        <section>
-            <div class="#">
-                <img src="images/exploring-home.jpg" alt="A man takes a picture with his phone of the beautiful mountain."/>
-            </div>
-            <div class="#">
+                <p>Our customers are everything, we are passionate about you getting top customer service and fast delivery every time you shop with us.</p></div>
+            <div class="about-flexbox">
+              <figure>
                 <img src="images/hiking-home.jpg" alt="Two people with their backs turned, exploring the beautiful mountain with forest around."/>
-            </div>
-        </section>
-        <section>
-            <div>
-                <a href="index.html" class="cta-large">Home</a>
-            </div>
+              </figure>
+              <figure>
+                <img src="images/hiking-home.jpg" alt="Two people with their backs turned, exploring the beautiful mountain with forest around."/>
+              </figure>
+             </div>
+             <div>
+                <a href="index.html" class="cta-about">Home</a>
+              </div>
+           </div>
         </section>
     </main>
     <footer>
@@ -94,8 +94,8 @@
         <div class="contact-container">
           <h3>Contact us</h3>
             <ul>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="about.html" class="footer-about">About us</a></li>
+              <li><a href="contact.html" class="footer-contact">Contact us</a></li>
               <li>Work with us</li>
             </ul>
         </div>
