@@ -22,6 +22,10 @@ header {
     width: 100%;
 }
 
+body {
+    background-color: #f3f4f4;
+}
+
 .header-container {
    display: flex;
    justify-content: space-between;
@@ -80,6 +84,12 @@ nav a {
 .sale {
     color:#BF8C60;
 }
+
+.nav-menu {
+    background-color: #fff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
 
 nav li {
     display: inline-block;  
@@ -292,23 +302,13 @@ h2 {
     flex-direction: column;
 }
 
-body {
-    background-color: #f3f4f4;
-}
-
-.nav-menu {
-background-color: #fff;
-padding-top: 3px;
-padding-bottom: 3px;
-}
-
-
 /* Jacket specification site */
 .back-shopping-cart {
     color:#0A3641;
     text-decoration: none;
     font-weight: bolder;
     margin: 20px; 
+    margin-top: 5px;
     font-size: 1.3em;
 }
 
@@ -438,7 +438,6 @@ h5 {
     flex-direction: column; 
 }
 
-
 #select-payment {
     margin-top: 10px; 
 }
@@ -538,15 +537,27 @@ height: 247px;
     font-size: 16px;
     margin-top: 15px;
     border-radius: 20px;
-    background-color: #0A3641;
-    color:#BF8C60;
+    background-color:  rgba(122, 122, 112, 0.2); 
+    color:#0A3641;
     height: 40px;
-    width: 100px;
-   
+    width: 110px;
+    
 }
 
-.cta-large {
-   
+.cta-home-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.cta-contact {
+    background-color: #0A3641;
+    color: #BF8C60;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 60px 10px 60px;
+    border-radius: 10px; 
 }
 
 figure {
@@ -585,6 +596,7 @@ figure {
     line-height: 1.5em;
 }
 
+
 .cta-about {
     background-color: #0A3641;
     color: #BF8C60;
@@ -595,6 +607,11 @@ figure {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.cta-about-item {
+ 
+ 
 }
 
 /* footer */
