@@ -497,7 +497,7 @@ img {
 .contact-us-container {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
     padding: 10px;
     line-height: 1.8; 
 }
@@ -541,7 +541,12 @@ img {
 .about-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+
+.figure-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
 }
 
 .about-flexbox {
@@ -613,9 +618,8 @@ img {
         flex:1 0 48%;
     }
 
-    .product-content{
-
-        width:100%;
+    .product-content {
+        width: 100%;
     }
 
     .product-container {
@@ -631,6 +635,10 @@ img {
     .contact-info-container {
         display: flex;
         flex-direction: column;
+    }
+
+    .contact-info-item {
+      
     }
 
 }
@@ -684,6 +692,10 @@ img {
   @media(max-width:500px){
     .hamburger-icon {
         display: inline-block;  
+    }
+
+    .nav li {
+     display: block;
     }
 
     nav {
