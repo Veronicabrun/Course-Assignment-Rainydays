@@ -238,7 +238,7 @@ h2 {
 }
 
 .categorie-exploring {
-    background-image: url("../images/home-header.jpg"); 
+    background-image: url("../images/exploring-home.jpg"); 
 }
 
 .categorie-hiking {
@@ -292,7 +292,7 @@ h2 {
     border-radius: 10px; 
 }
 
-.jackets-bottom-text{
+.jackets-bottom-text {
     display: flex;
     flex-direction: column;
 }
@@ -618,7 +618,7 @@ img {
   }
 
   /* @media */
-  @media(max-width: 1000px){
+  @media(max-width: 1000px) {
     .product-featured {
         flex:1 0 48%;
     }
@@ -643,6 +643,7 @@ img {
     }
 
 }
+
 
 @media(max-width: 899px){
     .banner-content {
