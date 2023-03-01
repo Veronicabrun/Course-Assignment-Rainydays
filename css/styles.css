@@ -53,7 +53,6 @@ body {
     color: #0A3641;  
 }
 
-
 .header-icons {
    display: flex; 
    gap: 20px;
@@ -69,6 +68,11 @@ body {
   display: none;  
 }
 
+.fa-solid, .fas {
+    font-size: 39px;
+    color:#0A3641;
+}
+
 nav {
     text-align: center;
 }
@@ -79,10 +83,6 @@ nav a {
     font-weight: bold;
     font-size: 1em;
     padding: 10px; 
-}
-
-.sale {
-    color:#BF8C60;
 }
 
 .nav-menu {
@@ -130,7 +130,6 @@ main {
     height: 300px;   
 }
 
-
 .banner__image {
   height: 100%;
   width: 100%;
@@ -144,9 +143,10 @@ main {
     background-color: #0A3641;
     color: #BF8C60;
     text-decoration: none;
-    padding: 5px 20px 5px 20px;
-    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
     font-size: 24px;
+    font-weight: bold;
 } 
 
 .banner-content {
@@ -164,15 +164,12 @@ main {
 .banner-content>h1 {
     width: 40%;
     text-align: center;
-
 }
 
 span {
     font-size: 2.5em;
-    color: #BF8C60;
+    color: #bc8a5f;
 }
-
-
 
 .all-news {
     margin-left: 30px;
@@ -194,7 +191,7 @@ span {
     gap: 30px;
     padding: 20px 30px;
     margin-bottom: 30px;
-    background-color: rgba(112, 112, 112,.2);
+    background-color: #f3f4f4;
 }
 
 .product-card {
@@ -210,14 +207,14 @@ span {
 
 h2 {
     display: block;
-    font-size: 14px;
+    font-size: 1em;
     text-align: left;
     font-weight: bolder;
 }
 
 .product__price {
     display: block;
-    color: #BF8C60;
+    color: #0A3641;
     text-align: left;
     font-weight: bolder;
 }
@@ -282,7 +279,7 @@ h2 {
     gap: 30px;
     padding: 20px 30px;
     margin-bottom: 30px;
-    background-color: rgba(122, 122, 112, 0.2);  
+    background-color: #f3f4f4;  
 }
 
 .cta-large-jackets {
@@ -290,6 +287,7 @@ h2 {
     color: #BF8C60;
     text-decoration: none;
     font-size: 24px;
+    font-weight: bold;
     padding: 10px 30px 10px 30px;
     border-radius: 10px; 
 }
@@ -320,7 +318,7 @@ h2 {
     padding: 20px 30px;
     margin-bottom: 30px;
     margin-top: 10px;
-    background-color: rgba(122, 122, 112, 0.2); 
+    background-color:  rgba(122, 122, 112, 0.2); 
     border: 1px solid #0A3641;
 }
 
@@ -336,7 +334,7 @@ h2 {
 
 .product--price {
     font-size: 1.5em;
-    color: #BF8C60;
+    color: #9c7350;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -367,13 +365,14 @@ h2 {
     color: #BF8C60;
     text-decoration: none;
     font-size: 24px;
+    font-weight: bold;
     padding: 5px 30px 5px 30px;
     border-radius: 10px; 
 }
 
 h5 {
     font-size: 1.5em; 
-    margin: 20px;
+    margin: 30px;
     font-weight: bolder;
 }
 
@@ -385,7 +384,7 @@ h5 {
     gap: 30px;
     padding: 20px 30px;
     margin-bottom: 30px;
-    background-color: rgba(112, 112, 112,.2);
+    background-color: #f3f4f4;
 }
 
 /* checkout page */
@@ -452,9 +451,8 @@ figure {
     height: 80vh; 
 }
 
-.fa-solid, .fas {
-    font-size: 39px;
-    color:#0A3641;
+.fa-circle-check {
+    font-size: 80px;
 }
 
 .cta-success {
@@ -462,8 +460,9 @@ figure {
     color: #BF8C60;
     text-decoration: none;
     font-size: 24px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 10px; 
+    font-weight: bold;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;    
 }
 
 /* Contact page */
@@ -492,6 +491,10 @@ img {
 .contact-info-item {
     flex: 1;
     padding: 20px;
+}
+
+.contact-info-item>p {
+    margin-left: 10px;
 }
 
 .contact-us-container {
@@ -527,6 +530,7 @@ img {
     color: #BF8C60;
     text-decoration: none;
     font-size: 24px;
+    font-weight: bold;
     padding: 10px 60px 10px 60px;
     border-radius: 10px; 
 }
@@ -576,8 +580,9 @@ img {
     color: #BF8C60;
     text-decoration: none;
     font-size: 24px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 5px; 
+    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    border-radius: 10px; 
     justify-content: center;
     margin-top: 20px;
     display: inline-block;
@@ -637,10 +642,6 @@ img {
         flex-direction: column;
     }
 
-    .contact-info-item {
-      
-    }
-
 }
 
 @media(max-width: 899px){
@@ -668,6 +669,14 @@ img {
     }
 }
 
+@media(max-width: 728px) {
+  .header-icon {
+    display: block;
+    
+  }
+
+}
+
 @media(max-width: 670px){
     .products-container, .categories {
         flex-direction: column;
@@ -678,8 +687,7 @@ img {
     }
 
     .product-list {
-       grid-template-columns: 1fr 1fr;
-      
+       grid-template-columns: 1fr 1fr; 
     }
 
     .products-container-jacket {
@@ -690,12 +698,26 @@ img {
 
 
   @media(max-width:500px){
-    .hamburger-icon {
-        display: inline-block;  
+    .header-icons {
+      flex: 1 0 100%;   
     }
 
-    .nav li {
-     display: block;
+    .header-container {
+       flex-wrap: wrap; 
+    }
+
+    .search {
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    .hamburger-icon {
+        display: inline-block; 
+        padding-left: 10px; 
+    }
+
+    nav li {
+        display: block;
     }
 
     nav {
