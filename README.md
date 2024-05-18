@@ -49,6 +49,7 @@ User testing was conducted to identify and implement improvements in the website
 
 ## Contact
 vbpedersen@outlook.com
+
 linkedin.com/in/veronica-brun-pedersen-2860bb249
 
 ## Getting Started
